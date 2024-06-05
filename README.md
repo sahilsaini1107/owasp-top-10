@@ -7,7 +7,8 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 1. **Broken Access Control**
    - Description: Exploitation of flaws that allow unauthorized users to access restricted functions or data.
    - Examples: Bypassing authentication, accessing sensitive data, or performing actions as another user.
-  **Prevention Methods:**
+     
+  - **Prevention Methods:**
     - **Implement Proper Authorization Checks:** Ensure that authorization checks are performed at every layer of your application.
     - **Least Privilege Principle:** Users should have the minimum level of access necessary to perform their tasks.
     - **Role-Based Access Control (RBAC):** Define roles and assign permissions accordingly.
@@ -17,7 +18,7 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 2. **Cryptographic Failures**
    - Description: Issues related to the protection of data in transit and at rest.
    - Examples: Inadequate encryption, use of weak cryptographic algorithms, or poor key management.
-  **Prevention Methods:**
+  - **Prevention Methods:**
     - **Use Strong Encryption Standards:** Use up-to-date, strong cryptographic algorithms and libraries (e.g., AES, RSA).
     - **Secure Key Management:** Ensure keys are stored securely and rotated regularly.
     - **TLS Everywhere:** Use Transport Layer Security (TLS) for all data in transit.
@@ -27,7 +28,7 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 3. **Injection**
    - Description: Insertion of malicious code into a program through an untrusted input.
    - Examples: SQL injection, Command injection, or LDAP injection.
-  **Prevention Methods:**
+  - **Prevention Methods:**
     - **Parameterized Queries/Prepared Statements:** Always use parameterized queries for database access.
     - **Input Validation:** Validate and sanitize all user inputs.
     - **ORMs:** Use Object-Relational Mappers (ORMs) to abstract database interactions.
@@ -37,7 +38,7 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 4. **Insecure Design**
    - Description: Inherent flaws in design that compromise security.
    - Examples: Lack of secure design principles, threat modeling, or security requirements.
-  **Prevention Methods:**
+  - **Prevention Methods:**
     - **Secure Design Principles:** Follow secure design principles such as defense-in-depth, least privilege, and fail-safe defaults.
     - **Threat Modeling:** Regularly perform threat modeling to identify and mitigate potential security threats.
     - **Security Requirements:** Incorporate security requirements into the development lifecycle.
@@ -46,7 +47,7 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 5. **Security Misconfiguration**
    - Description: Improperly configured or insecure default configurations.
    - Examples: Unnecessary services enabled, default accounts, or outdated software.
-  **Prevention Methods:**
+  - **Prevention Methods:**
     - **Automated Configuration Management:** Use tools like Ansible, Puppet, or Chef to manage configurations.
     - **Secure Defaults:** Ensure default configurations are secure.
     - **Regular Updates:** Keep software and dependencies up-to-date.
@@ -56,7 +57,7 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 6. **Vulnerable and Outdated Components**
    - Description: Use of libraries, frameworks, and other software modules with known vulnerabilities.
    - Examples: Using old versions of software with known security issues.
-  **Prevention Methods:**
+  - **Prevention Methods:**
     - **Regularly Update Dependencies:** Use tools like Dependabot to keep libraries and frameworks up-to-date.
     - **Vulnerability Scanning:** Regularly scan for vulnerabilities using tools like Snyk or OWASP Dependency-Check.
     - **Monitor Vulnerability Databases:** Subscribe to security advisories and vulnerability databases like CVE.
@@ -65,7 +66,7 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 7. **Identification and Authentication Failures**
    - Description: Issues related to the authentication and session management.
    - Examples: Weak passwords, unprotected session IDs, or flawed multi-factor authentication.
- **Prevention Methods:**
+ - **Prevention Methods:**
     - **Multi-Factor Authentication (MFA):** Implement MFA to enhance security.
     - **Strong Password Policies:** Enforce strong password policies and educate users on creating strong passwords.
     - **Secure Session Management:** Use secure session tokens and manage session lifetimes appropriately.
@@ -75,7 +76,7 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 8. **Software and Data Integrity Failures**
    - Description: Code and infrastructure that do not protect against integrity violations.
    - Examples: Dependency on insecure software, untrusted sources, or insufficient code signing.
-  **Prevention Methods:**
+  - **Prevention Methods:**
     - **Digital Signatures:** Use digital signatures to verify the integrity of software and data.
     - **Secure Software Development Lifecycle (SDLC):** Integrate security practices into your SDLC.
     - **Continuous Integration/Continuous Deployment (CI/CD) Security:** Secure your CI/CD pipeline to prevent unauthorized changes.
@@ -85,7 +86,7 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 9. **Security Logging and Monitoring Failures**
    - Description: Lack of logging and monitoring, leading to delayed or missed detection of security breaches.
    - Examples: Insufficient logging, missing monitoring of critical functions, or poor alerting.
-  **Prevention Methods:**
+  - **Prevention Methods:**
     - **Comprehensive Logging:** Log all security-relevant events, including failed login attempts, access to sensitive data, and administrative actions.
     - **Centralized Logging:** Use centralized logging systems like ELK Stack or Splunk for easier monitoring.
     - **Regular Audits:** Regularly audit logs for suspicious activities.
@@ -95,7 +96,7 @@ The OWASP Top 10 is a standard awareness document for developers and web applica
 10. **Server-Side Request Forgery (SSRF)**
     - Description: Exploitation of server-side functionality to make unauthorized requests.
     - Examples: Sending requests to internal systems from an application.
-  **Prevention Methods:**
+  - **Prevention Methods:**
       - **Whitelist/Blacklist:** Use whitelisting to limit the destinations of outgoing requests.
       - **Network Segmentation:** Isolate internal services to minimize the impact of SSRF attacks.
       - **Input Validation:** Validate and sanitize all user inputs that generate server-side requests.
